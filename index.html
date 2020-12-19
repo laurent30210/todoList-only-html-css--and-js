@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList_Only css / Js Vanilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="header__title">Make DOM and create a todolist // only css / js </h1>
+        </header>
+        <main class="main">
+            <!-- Create form and input -->
+            <form class="form" method="GET">                
+                <input class="form__input" type="text" id="" placeholder="Indiquer votre tache ici">
+            </form>            
+            <div class="counter">
+                <p class="counter__content">4 tâches en cours</p>
+            </div>
+            <!-- Create Container List -->
+            <ul class="list">
+                <!-- Create Task 1 -->
+                <li  class="task task--finished">
+                    <input class="task__input" type="checkbox" id="1">
+                    <label class="task__label" for="1">préparer les courses</label>
+                    <span class="task__trash">X</span>
+                </li>
+                <!-- Create Task 2 -->
+                <li class="task">
+                    <input class="task__input" type="checkbox" name="" id="2">
+                    <label class="task__label" for="2">acheter de la farine</label>
+                    <span class="task__trash">X</span>
+                </li>
+                <!-- Create Task 3 -->
+                <li class="task">
+                    <input class="task__input" type="checkbox" name="" id="3">
+                    <label class="task__label" for="3">prendre du lait</label>
+                    <span class="task__trash">X</span>
+                </li>
+                <!-- Create Task 4 -->
+                <li class="task">
+                    <input class="task__input" type="checkbox" name="" id="4">
+                    <label class="task__label" for="4">récupérer des oeufs</label>
+                    <span class="task__trash">X</span>
+                </li>
+                 <!-- Create Task 5 -->
+                 <li class="task">
+                    <input class="task__input" type="checkbox" name="" id="5">
+                    <label class="task__label" for="4">récupérer des oeufs</label>
+                    <span class="task__trash">X</span>
+                </li>                  
+            </ul>
+            <footer class="footer">
+                <div class="footer__content">
+                    <p class="footer__title">TodoList only html / css and js Vanilla</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

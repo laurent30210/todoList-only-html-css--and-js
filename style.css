@@ -1,0 +1,135 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #002329;    
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 3rem;
+}
+
+/** ----- HEADER ----- */
+/** ------------------ */
+.header, .footer {
+    width: 100%;
+    text-align: center;
+}
+.header__title {
+    font-size: 3rem;
+    color: #e6fffb;
+    padding: 1rem;
+}
+.header__title::first-letter {
+    font-size: 1.2em;
+    color: #f5222d;
+    text-transform: uppercase;
+}
+
+/** ----- MAIN ----- */
+/** ---------------- */
+.main {
+   width: 50%;
+   min-width: 400px;
+   padding: 1em;
+}
+
+/** ----- FORM ----- */
+/** ---------------- */
+.form {
+    width: calc(400px + 1.8rem);
+    padding: 1rem;
+}
+.form__input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+.form__input::placeholder {
+    color: #777;
+}
+
+/** ----- COUNTER ----- */
+/** ------------------- */
+.counter {
+    color: #e6fffb;
+    font-size: 1.4rem;
+}
+.counter__content, .list {
+    padding-left: .8em;
+}
+.counter__nbr {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/** ----- TASKS ----- */
+/** ------------------- */
+.task {
+    position: relative;
+    width: 90%;
+    background-color: #e6fffb;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: .7rem;
+    user-select: none;
+    overflow: hidden;
+
+}
+.task__label {
+    color: #002329;
+    margin-left: .5em;
+    cursor: pointer;
+
+}
+/* Task finished*/
+.task--finished {
+    background-color: #006d75;
+    text-decoration: line-through;
+}
+.task__trash {
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1em;
+    background-color: #f5222d;
+    color: #fff;
+    cursor: pointer;
+    transition: right .2s linear;
+}
+/*  trash if Task-active*/
+.task--finished > .task__trash {
+    background-color: #690f13;
+}
+.task:hover > .task__trash {
+    right: 0;
+}
+.task__edit {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #149614;
+    padding: .8em;
+}
+/*  edit if Task-active*/
+.task--finished > .task__edit {
+    color: #0b520b;
+}
+
+/** ----- FOOTER ------ */
+/** ------------------- */
+.footer__title {
+    color: #e6fffb;
+    font-size: 1.3rem;
+}
+
+
